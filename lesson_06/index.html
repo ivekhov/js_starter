@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <title>Занятие 6: домашняя работа</title>
+
+        <script src="scripts/scripts.js" defer></script>
+        <script src="scripts/scripts_2.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    </head>
+    <body>
+        <h3>Задание</h3>
+
+        <br>1) Доработать функцию замены картинки в галерее таким образом, чтобы она проверяла наличие 
+        картинки по указанному в src адресу.
+        ToDo: 
+        1. Восстановить функцию замены
+        2. Создать объекты малых и больших картинок
+        3. Встроить условие проверки с сообщением об ошибке
+        
+        <br>2) Реализовать модуль корзины. Создать блок товаров и блок корзины. У каждого 
+        товара есть кнопка «Купить», при нажатии на которую происходит добавление имени и цены 
+        товара в блок корзины. Корзина должна уметь считать общую сумму заказа.
+        1. кнопка
+        2. функция добавления данных в объект по клику
+
+
+        <br>3) * Добавить в галерею функцию перехода к следующему изображению. По сторонам от 
+        большой картинки должны быть стрелки “вперед” и “назад”, по нажатию на которые происходит 
+        замена изображения на следующее или предыдущее. --
+        <p><h3>Решение</h3></p>
+        <div class="separator">Задание №1</div>
+        <div class="viewer">
+            <div id="left_slider">
+                    <button id="b1">Previous</button>
+            </div>
+            <div id="big_picture"></div>
+            <div id="right_slider">
+                    <button id="b2">Next</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img id="image_1" src="img/small/1.jpg">
+            <img id="image_2" src="img/small/2.jpg">
+            <img id="image_3" src="img/small/3.jpg">
+        </div>
+
+    <div class="separator">Задание №2</div>
+
+    <div class="container">
+        <div id="product_1">Mers</div>
+        <div id="product_2">Volvo</div>
+        <div id="product_3">Toyota</div>       
+    </div>
+
+    <p></p>
+    <button id="b7">buy</button>
+    <button id="b8">buy</button>
+    <button id="b9">buy</button>
+    <p></p>
+
+    <button id="b3">add smth to basket</button>
+    <button id="b4">show sum of orders</button>
+    <button id="b5">show basket in console</button>
+    <button id="b6">clear basket</button>
+    <button id="b10">findId</button>
+
+</body>
+
+</html>
